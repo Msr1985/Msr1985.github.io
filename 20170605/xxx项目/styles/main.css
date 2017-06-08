@@ -1,0 +1,49 @@
+body{
+    background-color: #fff;
+    width: 100%;
+    font-family: '微软雅黑';
+    min-width: 1367px;
+}
+/*页面导航开始*/
+.header{
+    height: 99px;
+    width: 1187px;
+    margin: 0 auto;
+}
+.header .logo{
+    width: 155px;
+    height: 30px;
+    margin-top: 32px;
+}
+.header .right-nav{
+    float: right;
+    margin-top: 42px;
+    width: 502px;
+}
+.header .right-nav a{
+    color: #421800;
+    font-size: 18px;
+    width: 121px; 
+    display: inline-block;
+}
+/*顶部导航结束*/
+
+/*主体部分*/
+.main .banner{
+    width: 100%;
+}
+.main .banner img{
+    width: 100%;
+}
+
+/*底部*/
+.footer{
+    height: 100px;
+    background-color: #291c18;
+}
+.footer .text{
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
