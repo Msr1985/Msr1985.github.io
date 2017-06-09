@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单节点</title>
+</head>
+
+<body>
+    <!--
+        表单元素的值需要使用value属性进行获取
+    -->
+    <ul>
+        <li>
+            <input type="text" id="txtName" name="userName">
+        </li>
+        <li>
+            <input type="radio" name="gender" value="男" checked>男
+            <input type="radio" name="gender" value="女">女
+        </li>
+        <li>
+            <input type="checkbox" name="color" value="red">红
+            <input type="checkbox" name="color" value="blue">蓝
+        </li>
+        <li>
+            <select id="sel" name="mobileType">
+                <option value="oppo">oppo</option>
+                <option selected value="vivo">vivo</option>
+                <option value="apple">apple</option>
+            </select>
+        </li>
+        <li>
+            <button onclick="save()">保存</button>
+        </li>
+    </ul>
+    <script src="./js/form.js"></script>
+
+</body>
+
+</html>

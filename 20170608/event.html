@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js中的标签事件</title>
+</head>
+<body>
+    <!--
+        click   点击事件
+        keyup   键盘抬起事件
+        change  改变事件
+        为标签添加事件的方法
+            1.直接在html标签中写一个事件名字，设置属性值为一个事件处理函数
+            2.在js代码中通过on...赋值一个事件
+            3.通过addEventlistener添加事件监听
+        在html中为标签绑定事件的时候,可以传递一个内置参数event
+    -->
+    <!--onclick的值为一个function的名字,需要自己实现-->
+    <button id="btn" onclick="clickHandle(event)">按钮</button>
+    <!--
+        keydown     键盘按下 先执行
+        keyup       键盘抬起 最后执行
+        keypress    键盘点击 后执行
+        当keyup事件触发的时候就可以获取当前输入框中的输入组
+    -->
+    <input type="text" id="txt"
+        onkeydown = "keyDownHandle(event)"
+        onkeypress="keyPressHandle(event)"
+        onkeyup="keyupHandle(event)"
+    >
+    <script src="./js/event.js"></script>
+</body>
+</html>
